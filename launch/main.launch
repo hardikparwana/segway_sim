@@ -70,7 +70,7 @@
 			<param name="enlarge"    type="double" value="0.0"/>		
 		</node>
 
-		<node pkg="rosbag" type="record" name="record" output="screen" args="record -a -o /home/ugo/rosbag/"/> 
+		<node pkg="rosbag" type="record" name="record" output="screen" args="record -a -o /home/hardik/catkin_ws/src/segway_sim/rosbags/"/> 
 	
 	</group>
 </launch>

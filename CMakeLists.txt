@@ -24,6 +24,7 @@ find_package(catkin REQUIRED COMPONENTS
   pcl_conversions
   pcl_ros
   ambercortex_ros
+  osqp
   )
 
 # Chose osqp version
@@ -32,11 +33,11 @@ find_package(catkin REQUIRED COMPONENTS
 #   set(OSQP_MODE "osqp_embedded")
 #   set(OSQP_MODE_LIB "osqp_embedded")
 # else()
-#   set(OSQP_MODE "osqp")
-#   set(OSQP_MODE_LIB "osqpstatic")
+   set(OSQP_MODE "osqp")
+   set(OSQP_MODE_LIB "osqpstatic")
 # endif()
-set(OSQP_MODE "osqp_embedded")
-set(OSQP_MODE_LIB "osqp_embedded")
+#set(OSQP_MODE "osqp_embedded")
+#set(OSQP_MODE_LIB "osqp_embedded")
 # Find OSQP library and headers
 find_package(${OSQP_MODE} REQUIRED CONFIG)
 
